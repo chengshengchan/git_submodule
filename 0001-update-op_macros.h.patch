@@ -1,0 +1,25 @@
+From 08d75864fbe571d0283173b34b30f9845d100f65 Mon Sep 17 00:00:00 2001
+From: JamesChan <james121506@gmail.com>
+Date: Mon, 11 Dec 2017 22:37:13 +0800
+Subject: [PATCH] update op_macros.h
+
+---
+ tensorflow/contrib/lite/kernels/op_macros.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/tensorflow/contrib/lite/kernels/op_macros.h b/tensorflow/contrib/lite/kernels/op_macros.h
+index 7535afa..7e5bd17 100644
+--- a/tensorflow/contrib/lite/kernels/op_macros.h
++++ b/tensorflow/contrib/lite/kernels/op_macros.h
+@@ -14,7 +14,7 @@ limitations under the License.
+ ==============================================================================*/
+ #ifndef THIRD_PARTY_TENSORFLOW_CONTRIB_LITE_KERNELS_OP_UTIL_H_
+ #define THIRD_PARTY_TENSORFLOW_CONTRIB_LITE_KERNELS_OP_UTIL_H_
+-
++#include <stdio.h>
+ #define TF_LITE_FATAL(msg)          \
+   do {                              \
+     fprintf(stderr, "%s\n", (msg)); \
+-- 
+1.9.1
+
